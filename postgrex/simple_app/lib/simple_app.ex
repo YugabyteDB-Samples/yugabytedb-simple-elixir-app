@@ -2,11 +2,12 @@ defmodule SimpleApp do
   @db_config [
     hostname: "127.0.0.1",
     port: 5433,
+    # Uncomment and provide a certificate if you use YugabyteDB Aeon or connect
+    # to a secure YugabyteDB cluster.
+    # ssl: [cacertfile: ~c"/home/certs/my_yugabytedb_root.crt"],
     database: "yugabyte",
     username: "yugabyte",
-    password: "yugabyte",
-    ssl: false,
-    ssl_opts: [cacertfile: ~c"/home/certs/my_cert.pem"]
+    password: "yugabyte"
   ]
 
   def start do
@@ -14,7 +15,7 @@ defmodule SimpleApp do
     {:ok, pid} = Postgrex.start_link(db_config)
 
     IO.puts(">>>> Successfully connected to YugabyteDB! PID: #{inspect(pid)}")
-    
+
     # Create a sample database
     create_database(pid)
 
