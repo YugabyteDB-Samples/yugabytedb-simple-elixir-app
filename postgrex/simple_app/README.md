@@ -10,8 +10,22 @@ defp deps do
 end
 ```
 
-Run the following command to pull and add the dependency to the project:
+Run the sample by following these commands:
 
-```shell
-* mix depts.get
-```
+1. Add all the required dependencies:
+
+    ```shell
+    mix depts.get
+    ```
+
+2. Compile the app and start an iex session:
+
+    ```shell
+    iex -S mix
+    ```
+
+3. Run the app:
+
+    ```shell
+    SimpleApp.start
+    ```
