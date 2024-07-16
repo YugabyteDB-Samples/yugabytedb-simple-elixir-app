@@ -19,7 +19,7 @@ If you use a different type of deployment, then update the `/src/main/resources/
 Clone the application to your machine:
 
 ```bash
-git clone https://github.com/yugabyte/yugabytedb-simple-elixir-app.git && cd yugabytedb-simple-elixir-app
+git clone https://github.com/YugabyteDB-Samples/yugabytedb-simple-elixir-app.git && cd yugabytedb-simple-elixir-app
 ```
 
 ## Provide Cluster Connection Parameters
