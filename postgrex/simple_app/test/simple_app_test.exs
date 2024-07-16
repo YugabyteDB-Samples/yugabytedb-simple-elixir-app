@@ -2,7 +2,7 @@ defmodule SimpleAppTest do
   use ExUnit.Case
   doctest SimpleApp
 
-  test "greets the world" do
-    assert SimpleApp.hello() == :world
+  test "test the app" do
+    assert SimpleApp.start()
   end
 end
