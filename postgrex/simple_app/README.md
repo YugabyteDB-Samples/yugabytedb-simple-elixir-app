@@ -22,25 +22,31 @@ First, open the `lib\simple_app.ex` and provide the database connectivity settin
 
 Next, run the app by following these commands:
 
-1. Add all the required dependencies:
+1. Navigate to the project's root folder:
+
+    ```shell
+    cd postgrex/simple_app
+    ```
+
+2. Add all the required dependencies:
 
     ```shell
     mix depts.get
     ```
 
-2. Compile the app and start an iex session:
+3. Compile the app and start an iex session:
 
     ```shell
     iex -S mix
     ```
 
-3. Run the app:
+4. Run the app:
 
     ```shell
     SimpleApp.start
     ```
 
-Finally, verify that the ouput is as follows:
+Lastly, verify that the ouput is as follows:
 
 ```output
 >>>> Successfully connected to YugabyteDB! PID: #PID<0.221.0>
