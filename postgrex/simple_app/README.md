@@ -10,7 +10,17 @@ defp deps do
 end
 ```
 
-Run the sample by following these commands:
+## Starting the App
+
+First, open the `lib\simple_app.ex` and provide the database connectivity settings:
+
+* `hostname` - the host name of your database cluster.
+* `port` - the port number (the default is `5433`).
+* `database` - the name of the database to connect to (the default is `yugabyte`).
+* `username` and `password` - the username and password for your database cluster.
+* `ssl.cacertfule`- the full path to your YugabyteDB Aeon or another secure cluster CA certificate (for example, `/Users/dmagda/certificates/root.crt`)
+
+Next, run the app by following these commands:
 
 1. Add all the required dependencies:
 
@@ -29,3 +39,18 @@ Run the sample by following these commands:
     ```shell
     SimpleApp.start
     ```
+
+Finally, verify that the ouput is as follows:
+
+```output
+>>>> Successfully connected to YugabyteDB! PID: #PID<0.221.0>
+>>>> Successfully created table DemoAccount.
+>>>> Selecting accounts:
+["Jessica", 28, "USA", 10000]
+["John", 28, "Canada", 9000]
+>>>> Transferred 800 between accounts.
+>>>> Selecting accounts:
+["Jessica", 28, "USA", 9200]
+["John", 28, "Canada", 9800]
+:ok
+```
