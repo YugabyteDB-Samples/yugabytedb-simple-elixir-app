@@ -6,7 +6,8 @@ The instructions below are provided for [YugabyteDB Aeon](https://cloud.yugabyte
 
 ## Prerequisite
 
-* [The latest versions](https://elixir-lang.org/docs.html) of the Elixir, IEx and Mix.
+* [The latest versions](https://elixir-lang.org/docs.html) of the Elixir, Erlang VM, IEx and Mix.
+* If you plan to run the Phoenix sample app, then install all the [required components](https://hexdocs.pm/phoenix/installation.html). Note, you don't need to install Postgres for Phoenix as long as you'll use YugabyteDB.
 * Command line tool or your favourite IDE, such as IntelliJ IDEA, or Eclipse.
 
 ## Start YugabyteDB Aeon Cluster
