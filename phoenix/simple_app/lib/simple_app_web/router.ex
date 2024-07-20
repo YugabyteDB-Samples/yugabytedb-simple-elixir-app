@@ -18,14 +18,13 @@ defmodule SimpleAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/accounts", AccountController, :accounts
-    get "/accounts/:id", AccountController, :show
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", SimpleAppWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", SimpleAppWeb do
+    pipe_through :api
+
+    resources "/accounts", AccountController, only: [:index, :show, :update]
+  end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:simple_app, :dev_routes) do
