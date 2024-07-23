@@ -18,7 +18,7 @@ First, open the `lib\simple_app.ex` and provide the database connectivity settin
 * `port` - the port number (the default is `5433`).
 * `database` - the name of the database to connect to (the default is `yugabyte`).
 * `username` and `password` - the username and password for your database cluster.
-* `ssl.cacertfule`- the full path to your YugabyteDB Aeon or another secure cluster CA certificate (for example, `/Users/dmagda/certificates/root.crt`)
+* `ssl: [cacertfile:...]`- the full path to your YugabyteDB Aeon or another secure cluster CA certificate (for example, `/Users/dmagda/certificates/root.crt`)
 
 Next, run the app by following these commands:
 

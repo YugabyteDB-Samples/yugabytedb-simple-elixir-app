@@ -23,7 +23,10 @@ defmodule SimpleAppWeb.Router do
   scope "/api", SimpleAppWeb do
     pipe_through :api
 
-    resources "/accounts", AccountController, only: [:index, :show, :update]
+    resources "/accounts", AccountController,
+      only: [:index, :show, :create, :delete]
+
+    put "/accounts/transfer", AccountController, :transfer
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

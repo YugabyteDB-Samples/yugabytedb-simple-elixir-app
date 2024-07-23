@@ -28,7 +28,7 @@ git clone https://github.com/YugabyteDB-Samples/yugabytedb-simple-elixir-app.git
 Start the app using the Postgrex driver or Phoenix framework:
 
 * [Simple Elixir App With Postgrex](postgrex/simple_app/README.md)
-* [Simple Elixir App with Phoenix](phoenix/TBD)
+* [Simple Elixir App with Phoenix](phoenix/simple_app/README.md)
 
 ## Stay in touch
 

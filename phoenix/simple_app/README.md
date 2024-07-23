@@ -16,3 +16,25 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## Test
+
+Get all accounts:
+```shell
+http GET http://localhost:4000/api/accounts
+```
+
+Add new account:
+```shell
+http POST http://localhost:4000/api/accounts name="John Doe" balance=1000
+```
+
+Delete account:
+```shell
+http DELETE http://localhost:4000/api/accounts/801
+```
+
+Transfer money between accounts:
+```shell
+http PUT http://localhost:4000/api/accounts/transfer from=1001 to=1002 amount=500
+```
