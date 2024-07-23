@@ -118,3 +118,5 @@ The application also implements the `transfer` action that lets you transfer mon
         ]
     }
     ```
+
+See the `lib\simple_app_web\controllers\account_controller.ex` controller for implementation details.
