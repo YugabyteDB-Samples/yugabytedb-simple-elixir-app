@@ -7,6 +7,11 @@ config :simple_app, SimpleApp.Repo,
   hostname: "localhost",
   port: 5433,
   database: "yugabyte",
+  # Uncomment and provide a certificate if you use YugabyteDB Aeon or connect
+  # to a secure YugabyteDB cluster.
+  #ssl_opts: [
+  #  cacertfile: "/path/to/ca_cert.pem"
+  #],
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 1,
