@@ -31,7 +31,7 @@ Next, run the app by following these commands:
 2. Add all the required dependencies:
 
     ```shell
-    mix depts.get
+    mix deps.get
     ```
 
 3. Compile the app and start an iex session:
